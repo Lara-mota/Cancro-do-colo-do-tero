@@ -1,0 +1,768 @@
+/* ========= RESET ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abhaya Libre", serif;
+}
+
+body {
+  background: #ffffff;
+  min-height: 100vh;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* ========= CONTAINER ========= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+/* ========= HEADER ========= */
+.header {
+  width: 100%;
+  background: #faf6fd;
+}
+
+.header-content {
+  max-width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO NORMAL */
+.logo {
+  height: 150px;
+  margin-right: 64px;
+  width: auto;
+  display: block;
+  flex-shrink: 0; /* impede que o logo empurre o menu quando a tela for pequena */
+}
+
+/* MENU NORMAL */
+.nav {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #914ac8;
+  text-decoration: none;
+}
+/* esconder no desktop o botão hamburger */
+.hamburger {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.intro-roxo {
+  background-color: #f3eafb;
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  position: relative;
+  overflow: visible;
+}
+
+.intro-conteudo {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 360px;
+}
+
+.intro-texto {
+  width: 100%;
+  padding-right: 40px;
+  margin-left: -90px;
+}
+
+.intro-texto h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6b3fa0;
+  line-height: 1.25;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+
+.intro {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* IMAGEM */
+.intro-imagem {
+  position: absolute;
+  right: 150px;
+  top: -195px;
+  width: 300px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.intro-imagem img {
+  width: 165%;
+  height: auto;
+}
+
+/* ========= TITULO BENEFICIOS ========= */
+.titulo-beneficios {
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.titulo-beneficios h2 {
+  color: #8e44ad;
+  font-size: 32px;
+}
+
+/* ========= CARDS ========= */
+.cards {
+  padding: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  min-height: 160px;
+  border: 1px solid #e5cff7;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s;
+  background: white;
+}
+
+.card-topo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card-topo img {
+  width: 40px;
+}
+
+.card-topo h3 {
+  font-size: 1.3rem;
+  color: #914ac8;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  white-space: normal;
+  color: black;
+}
+/* ========= CONTAINER DOS EXAMES ========= */
+.exames-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  align-items: stretch;
+}
+
+/* ========= CAIXAS ========= */
+.citologia,
+.hpv {
+  flex: 1;
+  border: 1px solid #e5c8f5;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+}
+
+/* ========= HEADERS ========= */
+.citologia-header,
+.hpv-header {
+  background: #ecd9fa;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.citologia-header h2,
+.hpv-header h2 {
+  color: #4e0586;
+  font-size: 26px;
+}
+
+.sub {
+  color: #4e0586;
+  font-size: 16px;
+}
+
+.citologia-header img,
+.hpv-header img {
+  width: 45px;
+}
+
+/* ========= BODY ========= */
+.citologia-body,
+.hpv-body {
+  padding: 25px;
+}
+
+.citologia-body h3,
+.hpv-body h3 {
+  color: #914ac8;
+  margin-bottom: 10px;
+}
+
+.citologia-body p,
+.hpv-body p {
+  margin-bottom: 15px;
+}
+
+/* ========= PASSOS (CITOLOGIA) ========= */
+.passos {
+  background: #faf6fd;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.passos h4 {
+  color: #914ac8;
+  margin-bottom: 10px;
+}
+
+.passos ol {
+  padding-left: 20px;
+}
+
+.passos li {
+  margin-bottom: 10px;
+}
+
+.nota {
+  color: #4e0586;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ========= INFO BOXES ========= */
+.info-boxes {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.info {
+  background: #ecd9fa;
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.info strong {
+  color: black;
+}
+
+/* ========= CAIXAS INTERNAS (HPV) ========= */
+.caixa {
+  background: #faf6fd;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.caixa h4 {
+  color: #8e44ad;
+  margin-bottom: 10px;
+}
+
+.caixa ul {
+  padding-left: 20px;
+}
+
+.caixa li {
+  margin-bottom: 10px;
+}
+
+/* ── BOTÃO SIMULADOR ── */
+.btn-simulador {
+  display: block;
+  margin-top: 24px;
+  padding: 14px 24px;
+  background: #4E0586;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  transition: background .2s, transform .15s;
+}
+
+.btn-simulador:hover {
+  background: #6f3fa7;
+  transform: translateY(-2px);
+}
+
+/* ========= FOOTER ========= */
+.footer {
+  width: 100%;
+  padding: 80px 0;
+  background-image: url("../img/Rodapé.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer h4 {
+  font-size: 1.25rem;
+  color: #784c9a;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  font-size: 1.05rem;
+  color: #784c9a;
+  margin: 6px 0;
+  position: relative;
+  padding-left: 18px;
+}
+.footer li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  color: #784c9a;
+}
+
+.footer-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.footer-recursos {
+  margin-left: -130px;
+}
+
+.footer-suporte {
+  margin-left: 320px;
+}
+
+.footer-divider {
+  width: 2px;
+  height: 140px;
+  background: #784c9a;
+}
+
+.footer-outros {
+  margin-left: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-left: -50px;
+  margin-top: -20px;
+}
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* ========= BOTÃO ACESSIBILIDADE ========= */
+.accessibility {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 90px;
+  height: 90px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.accessibility img {
+  width: 100%;
+  height: 100%;
+}
+#accessibility-panel {
+  position: fixed;
+  top: 0;
+  right: -350px; /* escondido */
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+  transition: right 0.3s ease;
+  z-index: 9998;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#accessibility-panel.open {
+  right: 0; /* aparece */
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.panel-content {
+  padding: 15px;
+  overflow-y: auto;
+}
+/* GRID ACESSIBILIDADE */
+#accessibility-panel .acc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* CARDS ACESSIBILIDADE */
+#accessibility-panel .acc-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#accessibility-panel .acc-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#accessibility-panel .acc-card p {
+  font-size: 13px;
+}
+
+#accessibility-panel .text-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: white  ;
+  border-radius: 12px;
+  border: 1px solid #ddd; 
+}
+#accessibility-panel h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: Black;
+}
+
+#accessibility-panel label {
+  font-size: 14px;
+  color: Black  ;
+}
+
+
+#accessibility-panel #rangeText {
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#accessibility-panel .buttons-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+#accessibility-panel .buttons-text button {
+  flex: 1;
+  margin: 0 3px;
+  padding: 6px;
+  border: none;
+  background: #faf6fd;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* MODOS */
+.high-contrast {
+  background: white !important;
+  color: black !important;
+}
+
+.dark-mode {
+  background: #111 !important;
+  color: white !important;
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  /* --- HEADER --- */
+  .header-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 150px;
+    margin-right: 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 6px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #914ac8;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+   .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #faf6fd;
+    z-index: 99;
+    flex-direction: column;
+    padding: 40px 32px;
+    overflow-y: auto;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  .mobile-menu a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #914ac8;
+    text-decoration: none;
+    padding: 18px 0;
+    border-bottom: 1px solid #e4d5f5;
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  /* --- INTRO --- */
+  .intro-roxo {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .intro-conteudo {
+    padding-right: 0;
+  }
+
+  .intro-texto {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .intro-texto h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .intro {
+    font-size: 18px;
+  }
+
+  .intro-imagem {
+    display: none;
+  }
+/* --- TÍTULO --- */
+  .titulo-beneficios h2 {
+    font-size: 20px;
+    padding: 0 16px;
+  }
+
+  /* --- CARDS BENEFÍCIOS --- */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 12px;
+    align-items: stretch;
+  }
+
+  .card {
+    width: 100%;
+    padding: 14px;
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-topo {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .card-topo h3 {
+    font-size: 1rem;
+  }
+
+  .card-topo img {
+    width: 28px;
+    flex-shrink: 0;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  /* --- EXAMES --- */
+  .exames-container {
+    grid-column: 1 / -1;
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0;
+    gap: 20px;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .citologia,
+  .hpv {
+    width: 100% !important;
+    flex: unset !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .citologia-header,
+  .hpv-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 20px;
+  }
+
+  .citologia-header h2,
+  .hpv-header h2 {
+    font-size: 20px;
+  }
+
+  .citologia-body,
+  .hpv-body {
+    padding: 20px;
+  }
+
+  .info-boxes {
+    flex-direction: column;
+    gap: 12px;
+  }
+  /* --- FOOTER --- */
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-recursos { margin-left: 0; }
+  .footer-suporte  { margin-left: 0; }
+  .footer-outros   { margin-left: 0; }
+  .footer-divider  { display: none; }
+  .footer-logo     { margin-left: 0; margin-top: 0; }
+  
+/* --- ACESSIBILIDADE --- */
+  .accessibility {
+    width: 60px;
+    height: 60px;
+    right: 12px;
+    bottom: 12px;
+  }
+  #accessibility-panel .acc-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,776 @@
+/* ========= RESET ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abhaya Libre", serif;
+}
+
+body {
+  background: #ffffff;
+  min-height: 100vh;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* ========= CONTAINER ========= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+/* ========= HEADER ========= */
+.header {
+  width: 100%;
+  background: #faf6fd;
+}
+
+.header-content {
+  max-width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO NORMAL */
+.logo {
+  height: 150px;
+  margin-right: 64px;
+  width: auto;
+  display: block;
+  flex-shrink: 0; /* impede que o logo empurre o menu quando a tela for pequena */
+}
+
+/* MENU NORMAL */
+.nav {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #914ac8;
+  text-decoration: none;
+}
+/* esconder no desktop o botão hamburger */
+.hamburger {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  width: 92%;
+  max-width: 1600px;
+  margin: 35px auto 20px auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 0;
+}
+
+.hero-text {
+  flex: 1.2;
+  max-width: 820px;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  color: #4e0586;
+  margin-bottom: 25px;
+}
+
+.hero-text p {
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.hero-image {
+  flex: 0.9;
+}
+
+.hero-image img {
+  width: 75%;
+  border-radius: 20px;
+}
+
+/* BENEFITS */
+.benefits {
+  width: 92%;
+  max-width: 1600px;
+  margin: 20px auto;
+  background: #faf6fd;
+  padding: 10px 18px 14px;
+  border-radius: 25px;
+}
+
+.benefits h2 {
+  text-align: center;
+  color: #914ac8;
+  font-size: 30px;
+  margin-bottom: -8px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 14px;
+  flex-wrap: nowrap;
+  background: transparent;
+  margin-top: -60px;
+}
+
+.card {
+  width: 19%;
+  min-width: 180px;
+  min-height: 240px;
+  background: white;
+  border: 1px solid #ecd9fa;
+  border-radius: 16px;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  line-height: 1.3;
+  color: #914ac8;
+  min-height: 45px;
+  margin-bottom: 8px;
+  
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+  max-width: 220px;
+  margin: 0 auto;
+  text-wrap:balance;
+ 
+}
+
+/* VACINATION */
+.vaccination {
+  width: 92%;
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 10px 0;
+}
+
+.vaccination h2 {
+  text-align: center;
+  color: #914ac8;
+  margin-bottom: 20px;
+}
+
+.vaccination-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.v-card {
+  width: 23%;
+  min-width: 260px;
+  min-height: 170px;
+  background: white;
+  border: 1px solid #ecd9fa;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.v-card h3 {
+  color: #914ac8;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.v-card p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.special-card {
+  background: #faf6fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.special-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.pink-bar {
+  width: 100%;          
+  margin: 20px auto;   
+  min-height: 40px;
+  background: #f4ecfb;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 15px;
+  
+}
+
+.pink-bar img {
+  width: 50px;
+}
+
+.pink-bar p {
+  font-size: 20px;
+}
+
+/* SAFETY */
+
+.safety {
+  width: 92%;
+  max-width: 1600px;
+  margin: -20px auto 40px auto; 
+}
+
+
+.safety h2 {
+  text-align: center;
+  color: #a060d1;
+  margin-bottom: 30px;
+}
+
+.safety-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* caixa 1 */
+.safe-box {
+  flex: 1;
+  min-width: 300px;
+  height: 110px;
+  border: 1px solid #ecd9fa;
+  border-radius: 18px;
+  background: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: -20px;
+}
+
+.safe-box p {
+  font-size: 20px;
+}
+.safe-box img {
+  width: 45px;
+}
+
+/* caixa 2 */
+.symptoms-box {
+  flex: 1;
+  min-width: 320px;
+  height: 110px;
+  border: 1px solid #ecd9fa;
+  border-radius: 18px;
+  background: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.symptom {
+  text-align: center;
+}
+
+.symptom img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.symptom p {
+  font-size: 14px;
+}
+
+/* nota */
+.note-box {
+  flex: 1;
+  min-height: 80px;
+  background: #ecd9fa;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.note-box p {
+  font-size: 14px;
+}
+
+/* ========= FOOTER ========= */
+.footer {
+  width: 100%;
+  padding: 80px 0;
+  background-image: url("../img/Rodapé.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer h4 {
+  font-size: 1.25rem;
+  color: #784c9a;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  font-size: 1.05rem;
+  color: #784c9a;
+  margin: 6px 0;
+  position: relative;
+  padding-left: 18px;
+}
+.footer li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  color: #784c9a;
+}
+
+.footer-columns {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.footer-recursos {
+  margin-left: -130px;
+}
+
+.footer-suporte {
+  margin-left: 320px;
+}
+
+.footer-divider {
+  width: 2px;
+  height: 140px;
+  background: #784c9a;
+}
+
+.footer-outros {
+  margin-left: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-left: -50px;
+  margin-top: -20px;
+}
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* ========= BOTÃO ACESSIBILIDADE ========= */
+.accessibility {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 90px;
+  height: 90px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.accessibility img {
+  width: 100%;
+  height: 100%;
+}
+#accessibility-panel {
+  position: fixed;
+  top: 0;
+  right: -350px; /* escondido */
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+  transition: right 0.3s ease;
+  z-index: 9998;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#accessibility-panel.open {
+  right: 0; /* aparece */
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.panel-content {
+  padding: 15px;
+  overflow-y: auto;
+}
+/* GRID ACESSIBILIDADE */
+#accessibility-panel .acc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* CARDS ACESSIBILIDADE */
+#accessibility-panel .acc-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#accessibility-panel .acc-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#accessibility-panel .acc-card p {
+  font-size: 13px;
+}
+
+#accessibility-panel .text-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: white  ;
+  border-radius: 12px;
+  border: 1px solid #ddd; 
+}
+#accessibility-panel h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: Black;
+}
+
+#accessibility-panel label {
+  font-size: 14px;
+  color: Black  ;
+}
+
+
+#accessibility-panel #rangeText {
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#accessibility-panel .buttons-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+#accessibility-panel .buttons-text button {
+  flex: 1;
+  margin: 0 3px;
+  padding: 6px;
+  border: none;
+  background: #faf6fd;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* MODOS */
+.high-contrast {
+  background: white !important;
+  color: black !important;
+}
+
+.dark-mode {
+  background: #111 !important;
+  color: white !important;
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  /* --- HEADER --- */
+  .header-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 150px;
+    margin-right: 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 6px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #914ac8;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #faf6fd;
+    z-index: 99;
+    flex-direction: column;
+    padding: 40px 32px;
+    overflow-y: auto;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  .mobile-menu a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #914ac8;
+    text-decoration: none;
+    padding: 18px 0;
+    border-bottom: 1px solid #e4d5f5;
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  /* --- HERO --- */
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+/* --- BENEFITS --- */
+  .benefits {
+    width: 100%;
+    padding: 16px;
+    margin: 16px auto;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    margin-top: 16px;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(50% - 8px);
+    min-width: unset;
+    min-height: unset;
+    padding: 12px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+    min-height: unset;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* --- VACCINATION --- */
+  .vaccination {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .vaccination-cards {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .v-card {
+    width: calc(50% - 8px);
+    min-width: unset;
+    height: auto;
+  }
+
+  /* --- PINK BAR --- */
+  .pink-bar {
+    margin: 16px;
+    padding: 12px;
+  }
+
+  .pink-bar p {
+    font-size: 16px;
+  }
+
+  /* --- SAFETY --- */
+  .safety {
+    width: 100%;
+    padding: 0 16px;
+    margin: 16px auto;
+  }
+
+  .safety-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .safe-box {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .symptoms-box {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    margin-top: 0;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .note-box {
+    margin-top: 0;
+  }
+
+  /* --- FOOTER --- */
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-recursos { margin-left: 0; }
+  .footer-suporte  { margin-left: 0; }
+  .footer-outros   { margin-left: 0; }
+  .footer-divider  { display: none; }
+  .footer-logo     { margin-left: 0; margin-top: 0; }
+  
+/* --- ACESSIBILIDADE --- */
+  .accessibility {
+    width: 60px;
+    height: 60px;
+    right: 12px;
+    bottom: 12px;
+  }
+  #accessibility-panel .acc-grid {
+    grid-template-columns: 1fr;
+  }
+}

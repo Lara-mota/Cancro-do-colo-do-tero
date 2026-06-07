@@ -1,0 +1,119 @@
+/* ================================================================
+   termos.css  –  Colo Saudável | Termos e Privacidade
+   ================================================================ */
+
+body {
+  background: #FAF6FD;
+  font-size: 19px;
+  font-family: "Abhaya Libre", serif;
+  line-height: 1.7;
+}
+
+/* ── HERO ── */
+.termos-hero {
+  background: linear-gradient(110deg, #F3EAFB 60%, #E8D5F5 100%);
+  padding: 48px 80px;
+}
+
+.termos-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #4E0586;
+  margin-bottom: 8px;
+}
+
+.termos-hero p {
+  color: #5A4070;
+  font-size: 1rem;
+}
+
+/* ── BODY ── */
+.termos-body {
+  max-width: 860px;
+  margin: 48px auto 80px;
+  padding: 0 48px;
+}
+
+/* ── SECÇÕES ── */
+.termos-secao {
+  background: white;
+  border-radius: 16px;
+  padding: 36px 40px;
+  margin-bottom: 24px;
+  border: 1px solid #EDE0F5;
+  box-shadow: 0 2px 12px rgba(78,5,134,.06);
+}
+
+.termos-secao h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4E0586;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.termos-secao h2 span {
+  background: #EDE0F5;
+  color: #4E0586;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.termos-secao p {
+  font-size: 0.97rem;
+  color: #3d2a55;
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+
+.termos-secao p:last-child { margin-bottom: 0; }
+
+.termos-secao ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.termos-secao ul li {
+  font-size: 0.95rem;
+  color: #3d2a55;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+/* ── DESTAQUE ── */
+.destaque {
+  background: #EDE0F5;
+  border-left: 4px solid #914AC8;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-top: 14px;
+  font-size: 0.92rem;
+  color: #4E0586;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* ── DATA ── */
+.data-atualizacao {
+  text-align: center;
+  color: #914AC8;
+  font-size: 0.85rem;
+  margin-bottom: 40px;
+}
+
+/* ── RESPONSIVO ── */
+@media (max-width: 768px) {
+  .termos-hero { padding: 32px 24px; }
+  .termos-hero h1 { font-size: 1.6rem; }
+  .termos-body { padding: 0 20px; margin: 32px auto 60px; }
+  .termos-secao { padding: 24px 20px; }
+}

@@ -194,6 +194,34 @@ body {
 .hpv-image img {
   max-width: 70%;
 }
+/* Container da imagem */
+.hpv-image {
+  text-align: center;
+}
+
+/* imagem */
+.hpv-image img {
+  max-width: 70%;
+}
+
+/* TEXTOS POR BAIXO */
+.labels {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 8px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* cada texto */
+.labels span {
+  flex: 1;
+  font-size: 13px;
+  color: BLACK;
+  text-align: center;
+}
 
 .subtitulo-hpv {
   font-size: 20px;

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz | Colo Saudável</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/paginaInicial.css" />
+    <link rel="stylesheet" href="../styles/quizzIntro.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-content">
+        <a href="/index.html">
+          <img
+            src="../img/Logo _Colo Saudável.png"
+            alt="Colo Saudável"
+            class="logo"
+          />
+        </a>
+
+        <nav class="nav">
+          <a href="../index.html">Início</a>
+          <a href="../html/patologia.html">Patologia</a>
+          <a href="../html/sintomas.html">Sintomas</a>
+          <a href="../html/prevencao.html">Prevenção</a>
+          <a href="../html/tratamento.html">Tratamento</a>
+          <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+          <a href="../html/contactos.html">Contactos</a>
+          <a href="../html/saberMais.html">Saber mais</a>
+          <a href="../html/Login.html">Login</a>
+        </nav>
+        <!-- Botão hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="../index.html">Início</a>
+        <a href="../html/patologia.html">Patologia</a>
+        <a href="../html/sintomas.html">Sintomas</a>
+        <a href="../html/prevencao.html">Prevenção</a>
+        <a href="../html/tratamento.html">Tratamento</a>
+        <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+        <a href="../html/contactos.html">Contactos</a>
+        <a href="../html/saberMais.html">Saber mais</a>
+        <a href="../html/Login.html">Login</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-quizz">
+      <div class="hero-quizz-content">
+        <div>
+          <h1>O que sabes sobre o<br />cancro do colo do útero?</h1>
+          <p class="hero-subtitulo">
+            Teste os seus conhecimentos com este quizz rápido e educativo
+          </p>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <div class="meta-icon">⏱️</div>
+              <div>
+                <span class="meta-label">5-7 minutos</span>
+                <span class="meta-sub">Duração média</span>
+              </div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-icon">📋</div>
+              <div>
+                <span class="meta-label">10 perguntas</span>
+                <span class="meta-sub">Escolha múltipla</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-clipboard">
+          <svg
+            width="200"
+            height="230"
+            viewBox="0 0 200 230"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse
+              cx="100"
+              cy="222"
+              rx="68"
+              ry="7"
+              fill="rgba(145,74,200,0.12)"
+            />
+            <rect x="20" y="26" width="150" height="182" rx="14" fill="white" />
+            <rect
+              x="20"
+              y="26"
+              width="150"
+              height="182"
+              rx="14"
+              stroke="#E8D5F5"
+              stroke-width="1.5"
+            />
+            <rect x="68" y="15" width="58" height="24" rx="12" fill="#914AC8" />
+            <rect x="81" y="21" width="32" height="12" rx="6" fill="#6B3FA0" />
+            <rect x="46" y="46" width="102" height="26" rx="7" fill="#4E0586" />
+            <text
+              x="97"
+              y="64"
+              text-anchor="middle"
+              font-family="'Abhaya Libre',serif"
+              font-weight="800"
+              font-size="13"
+              fill="white"
+              letter-spacing="2"
+            >
+              QUIZZ
+            </text>
+            <circle cx="48" cy="98" r="9" fill="#914AC8" />
+            <path
+              d="M44 98l3 3 5-5"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <rect x="64" y="94" width="88" height="8" rx="4" fill="#E8D5F5" />
+            <circle cx="48" cy="122" r="9" fill="#914AC8" />
+            <path
+              d="M44 122l3 3 5-5"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <rect x="64" y="118" width="72" height="8" rx="4" fill="#E8D5F5" />
+            <circle
+              cx="48"
+              cy="146"
+              r="9"
+              fill="#F3EAFB"
+              stroke="#D8BFF0"
+              stroke-width="1.5"
+            />
+            <rect x="64" y="142" width="82" height="8" rx="4" fill="#F3EAFB" />
+            <circle cx="158" cy="182" r="32" fill="#4E0586" />
+            <circle cx="158" cy="182" r="26" fill="#914AC8" />
+            <text
+              x="158"
+              y="192"
+              text-anchor="middle"
+              font-family="'Abhaya Libre',serif"
+              font-weight="900"
+              font-size="28"
+              fill="white"
+            >
+              ?
+            </text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD -->
+    <section class="secao-card">
+      <div class="quizz-intro-card">
+        <h2>Pronto para começar ?</h2>
+        <p>Responda a 10 perguntas rápidas sobre o cancro do colo do útero</p>
+        <div class="aviso">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path
+              d="M11 2C6.03 2 2 6.03 2 11s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm.75 13.5h-1.5V10h1.5v5.5zm0-7h-1.5V7h1.5v1.5z"
+              fill="#914AC8"
+            />
+          </svg>
+          Este quizz é apenas informativo, em caso de dúvidas contacte o seu
+          médico.
+        </div>
+        <a href="../html/quizz.html" class="btn-comecar">
+          Começar quizz <span class="seta">›</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-intro">
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">🎓</span>
+          <p>Reforce os seus conhecimentos</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🛡️</span>
+          <p>Informação é poder na prevenção precoce</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">💜</span>
+          <p>Incentive amigos e família a fazer o quizz</p>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">👥</span>
+          <p>Juntos podemos reduzir o impacto desta doença</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-columns">
+          <div class="footer-recursos">
+            <h4>Recursos</h4>
+            <ul>
+              <a href="../html/patologia.html">
+                <li>HPV</li>
+              </a>
+              <a href="../html/rastreio.html">
+                <li>Rastreio</li>
+              </a>
+                <a href=".../html/perguntasFrequentes.html">
+                <li>Perguntas Frequentes</li>
+              </a>
+              <a href="../html/artigos.html">
+                <li>Notícias</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="footer-suporte">
+            <h4>Suporte</h4>
+            <ul>
+              <a href="../html/contactos.html">
+                <li>Contactos</li>
+              </a>
+               <a href="../html/Sobre_nos.html">
+              <li>Sobre nós</li>
+              <li>Termos e privacidade</li>
+               <a href="../html/estatisticas.html">
+              <li>Estatísticas do site</li>
+              </a>
+            </ul>
+          </div>
+          
+          <div class="footer-divider"></div>
+          <div class="footer-outros">
+            <h4>Outros sites</h4>
+            <ul>
+              <a href="https://www.ligacontracancro.pt/cancro-do-colo-do-utero/"
+                ><li>Liga Portuguesa contra o cancro</li></a
+              >
+              <a
+                href="https://www.sns24.gov.pt/pt/tema/prevencao-e-cuidados-de-saude/rastreio-do-cancro-do-colo-do-utero/"
+                ><li>SNS 24</li></a
+              >
+            </ul>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" />
+        </div>
+      </div>
+    </footer>
+
+<!-- BOTÃO ACESSIBILIDADE -->
+    <button
+      id="accessibility-btn"
+      class="accessibility"
+      aria-label="Acessibilidade"
+    >
+      <img src="../img/accessibility.png" alt="Acessibilidade" />
+    </button>
+
+    <!-- PAINEL LATERAL -->
+    <div id="accessibility-panel">
+      <div class="panel-header">
+        <h2>Perfis de acessibilidade</h2>
+        <button id="close-panel">✕</button>
+      </div>
+
+      <div class="panel-content">
+        <h3>Ajuste de voz e navegação</h3>
+
+        <div class="acc-grid">
+          <div class="acc-card" id="btnOuvir">
+            <img src="../img/ouvir.png" />
+            <p>Leitor de texto</p>
+          </div>
+        </div>
+
+        <h3>Tamanho do texto</h3>
+
+        <div class="text-box">
+          <label for="rangeText">Ajustar</label>
+
+          <input type="range" id="rangeText" min="80" max="150" value="100" />
+
+          <div class="buttons-text">
+            <button id="btnMinus">A-</button>
+            <button id="btnReset">Reset</button>
+            <button id="btnPlus">A+</button>
+          </div>
+        </div>
+
+        <h3>Ajuste de cor</h3>
+        <div class="acc-grid">
+          <div class="acc-card" id="grayscale-btn">
+            <img src="../img/monocromatico.png" />
+            <p>Monocromático</p>
+          </div>
+
+          <div class="acc-card" id="dark-btn">
+            <img src="../img/modo_escuro.png" />
+            <p>Modo escuro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../js/init.js"></script>
+    <script src="../js/quizzintro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deixar Testemunho | Colo Saudável</title>
+
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS GERAL -->
+  <link rel="stylesheet" href="../styles/paginaInicial.css">
+
+  <!-- CSS DA PÁGINA -->
+  <link rel="stylesheet" href="../styles/deixarTestemunho.css">
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-content">
+    <a href="../index.html">
+      <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" class="logo">
+    </a>
+
+   <nav class="nav">
+      <a href="../index.html">Início</a>
+      <a href="../html/patologia.html">Patologia</a>
+      <a href="../html/sintomas.html">Sintomas</a>
+      <a href="../html/prevencao.html">Prevenção</a>
+      <a href="../html/tratamento.html">Tratamento</a>
+      <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+      <a href="../html/contactos.html">Contactos</a>
+      <a href="../html/saberMais.html">Saber mais</a>
+      <a href="../html/Login.html">Login</a>
+    </nav>
+     <!-- Botão hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+  </div>
+  
+  <nav class="mobile-menu" id="mobileMenu">
+      <a href="../index.html">Início</a>
+      <a href="../html/patologia.html">Patologia</a>
+      <a href="../html/sintomas.html">Sintomas</a>
+      <a href="../html/prevencao.html">Prevenção</a>
+      <a href="../html/tratamento.html">Tratamento</a>
+      <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+      <a href="../html/contactos.html">Contactos</a>
+      <a href="../html/saberMais.html">Saber mais</a>
+      <a href="../html/Login.html">Login</a>
+    </nav>
+</header>
+
+<main class="form-page">
+
+  <div class="form-container">
+
+    <h1>Submeter testemunho</h1>
+
+     <p class="descricao">
+  O seu testemunho pode inspirar, confortar e dar esperança a quem vive uma situação semelhante, 
+  sendo um apoio importante para enfrentar a doença com mais força e serenidade.
+  <br>
+  A sua voz faz a diferença.
+  <br>
+  Partilhe o seu testemunho.
+</p>
+
+    <form id="formTestemunho">
+
+      <h3>Dados pessoais</h3>
+
+      <div class="grid">
+
+        <div class="campo">
+          <label>Nome completo</label>
+          <input type="text" required>
+        </div>
+
+        <div class="campo">
+          <label>Idade</label>
+          <input type="number" required>
+        </div>
+
+        <div class="campo">
+          <label>Sexo</label>
+          <select>
+            <option value="">Selecionar</option>
+            <option>Feminino</option>
+            <option>Masculino</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label>Email</label>
+          <input type="email" required>
+        </div>
+
+        <div class="campo">
+          <label>Distrito</label>
+          <select id="distrito">
+            <option value="">Selecionar distrito</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label>Concelho</label>
+          <select id="concelho">
+            <option value="">Selecionar concelho</option>
+          </select>
+        </div>
+
+        <div class="campo full">
+          <label>Ano de diagnóstico</label>
+          <select id="ano"></select>
+        </div>
+
+   <div class="full">
+       <p class="info">
+        Em que medida considera importante a partilha destes testemunhos 
+        no apoio ao doente oncológico e familiares?
+       </p>
+    </div>
+
+<div class="full">
+<div class="radio-group">
+  <label class="radio">
+    <input type="radio" name="tipo" required>
+    Com o meu nome (e restante informação)
+  </label>
+
+  <label class="radio">
+    <input type="radio" name="tipo">
+    Com nome fictício (e restante informação)
+  </label>
+</div>
+</div>
+
+<div class="campo full">
+  <label>Testemunho</label>
+  <textarea rows="4" required></textarea>
+</div>
+
+<div class="full">
+<label class="termos">
+  <input type="checkbox" required>
+  <span>
+    Declaro que li e concordo com os 
+    <a href="../html/termos.html"><li>Termos e privacidade</li></a>
+    <a href="#">Política de Privacidade</a>
+  </span>
+</label>
+</div>
+
+<button type="submit">Enviar testemunho</button>
+
+    </form>
+
+  </div>
+
+</main>
+ <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-columns">
+          <div class="footer-recursos">
+            <h4>Recursos</h4>
+            <ul>
+              <a href="../html/patologia.html">
+                <li>HPV</li>
+              </a>
+              <a href="../html/rastreio.html">
+                <li>Rastreio</li>
+              </a>
+                <a href=".../html/perguntasFrequentes.html">
+                <li>Perguntas Frequentes</li>
+              </a>
+              <a href="../html/artigos.html">
+                <li>Notícias</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="footer-suporte">
+            <h4>Suporte</h4>
+            <ul>
+              <a href="../html/contactos.html">
+                <li>Contactos</li>
+              </a>
+               <a href="../html/Sobre_nos.html">
+              <li>Sobre nós</li>
+              <li>Termos e privacidade</li>
+               <a href="../html/estatisticas.html">
+              <li>Estatísticas do site</li>
+              </a>
+            </ul>
+          </div>
+          
+          <!-- linha vertical -->
+          <div class="footer-divider"></div>
+
+          <div class="footer-outros">
+            <h4>Outros sites</h4>
+            <ul>
+              <a
+                href="https://www.ligacontracancro.pt/cancro-do-colo-do-utero/"
+              >
+                <li>Liga Portuguesa contra o cancro</li>
+              </a>
+              <a
+                href="https://www.sns24.gov.pt/pt/tema/prevencao-e-cuidados-de-saude/rastreio-do-cancro-do-colo-do-utero/"
+              >
+                <li>SNS 24</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- logo separado à direita -->
+        <div class="footer-logo">
+          <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOTÃO ACESSIBILIDADE -->
+    <button
+      id="accessibility-btn"
+      class="accessibility"
+      aria-label="Acessibilidade"
+    >
+      <img src="../img/accessibility.png" alt="Acessibilidade" />
+    </button>
+
+    <!-- PAINEL LATERAL -->
+    <div id="accessibility-panel">
+      <div class="panel-header">
+        <h2>Perfis de acessibilidade</h2>
+        <button id="close-panel">✕</button>
+      </div>
+
+      <div class="panel-content">
+        <h3>Ajuste de voz e navegação</h3>
+
+        <div class="acc-grid">
+          <div class="acc-card" id="btnOuvir">
+            <img src="../img/ouvir.png" />
+            <p>Leitor de texto</p>
+          </div>
+        </div>
+
+        <h3>Tamanho do texto</h3>
+
+        <div class="text-box">
+          <label for="rangeText">Ajustar</label>
+
+          <input type="range" id="rangeText" min="80" max="150" value="100" />
+
+          <div class="buttons-text">
+            <button id="btnMinus">A-</button>
+            <button id="btnReset">Reset</button>
+            <button id="btnPlus">A+</button>
+          </div>
+        </div>
+
+        <h3>Ajuste de cor</h3>
+        <div class="acc-grid">
+          <div class="acc-card" id="grayscale-btn">
+            <img src="../img/monocromatico.png" />
+            <p>Monocromático</p>
+          </div>
+
+          <div class="acc-card" id="dark-btn">
+            <img src="../img/modo_escuro.png" />
+            <p>Modo escuro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/init.js"></script>
+    <script src="../js/deixarTestemunho.js"></script>
+</body>
+</html>

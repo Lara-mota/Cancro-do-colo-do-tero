@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Testemunhos | Colo Saudável</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/paginaInicial.css">
+  <link rel="stylesheet" href="../styles/admintestemunhos.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-content">
+    <a href="../index.html">
+      <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" class="logo">
+    </a>
+    <nav class="nav">
+      <a href="../index.html">Início</a>
+      <a href="../html/patologia.html">Patologia</a>
+      <a href="../html/sintomas.html">Sintomas</a>
+      <a href="../html/prevencao.html">Prevenção</a>
+      <a href="../html/tratamento.html">Tratamento</a>
+      <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+      <a href="../html/contactos.html">Contactos</a>
+      <a href="../html/saberMais.html">Saber mais</a>
+      <a href="../html/Login.html">Login</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="../index.html">Início</a>
+    <a href="../html/patologia.html">Patologia</a>
+    <a href="../html/sintomas.html">Sintomas</a>
+    <a href="../html/prevencao.html">Prevenção</a>
+    <a href="../html/tratamento.html">Tratamento</a>
+    <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+    <a href="../html/contactos.html">Contactos</a>
+    <a href="../html/saberMais.html">Saber mais</a>
+    <a href="../html/Login.html">Login</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-admin">
+  <h1>Administração — Testemunhos</h1>
+  <p>Consulta, aprova e gere os testemunhos submetidos pelos utilizadores</p>
+</section>
+
+<!-- STATS -->
+<div class="stats-grid">
+  <div class="stat-card"><strong id="statTotal">0</strong><span>Total</span></div>
+  <div class="stat-card"><strong id="statPendente">0</strong><span>Pendentes</span></div>
+  <div class="stat-card"><strong id="statAprovado">0</strong><span>Aprovados</span></div>
+  <div class="stat-card"><strong id="statRejeitado">0</strong><span>Rejeitados</span></div>
+</div>
+
+<!-- TOOLBAR -->
+<div class="toolbar">
+  <input type="text" id="pesquisa" placeholder="🔍 Pesquisar por nome ou texto...">
+  <button class="btn-adm btn-verde"    onclick="exportarJSON()">⬇️ Exportar JSON</button>
+  <button class="btn-adm btn-vermelho" onclick="limparTudo()">🗑️ Limpar tudo</button>
+  <button class="btn-adm btn-pale"     onclick="carregarTabela()">↺ Atualizar</button>
+</div>
+
+<!-- INFO -->
+<div class="info-bar">
+  <div>💡 Os testemunhos estão guardados no localStorage deste browser. Usa <strong>Exportar JSON</strong> para guardar um ficheiro no computador.</div>
+</div>
+
+<!-- TABELA -->
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Data</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Distrito</th>
+        <th>Ano Diag.</th>
+        <th>Testemunho</th>
+        <th>Estado</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaBody"></tbody>
+  </table>
+  <div class="vazio" id="vazio" style="display:none">Nenhum testemunho encontrado.</div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalVer">
+  <div class="modal">
+    <button class="modal-fechar" onclick="fecharModal()">✕</button>
+    <h2 id="modalNome"></h2>
+    <div class="meta" id="modalMeta"></div>
+    <div class="texto-completo" id="modalTexto"></div>
+  </div>
+</div>
+
+ <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-columns">
+          <div class="footer-recursos">
+            <h4>Recursos</h4>
+            <ul>
+              <a href="../html/patologia.html">
+                <li>HPV</li>
+              </a>
+              <a href="../html/rastreio.html">
+                <li>Rastreio</li>
+              </a>
+                <a href=".../html/perguntasFrequentes.html">
+                <li>Perguntas Frequentes</li>
+              </a>
+              <a href="../html/artigos.html">
+                <li>Notícias</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="footer-suporte">
+            <h4>Suporte</h4>
+            <ul>
+              <a href="../html/contactos.html">
+                <li>Contactos</li>
+              </a>
+               <a href="../html/Sobre_nos.html">
+              <li>Sobre nós</li>
+             <a href="../html/termos.html">
+              <li>Termos e privacidade</li>
+            </a>
+               <a href="../html/estatisticas.html">
+              <li>Estatísticas do site</li>
+              </a>
+            </ul>
+          </div>
+          <!-- linha vertical -->
+          <div class="footer-divider"></div>
+
+          <div class="footer-outros">
+            <h4>Outros sites</h4>
+            <ul>
+              <a
+                href="https://www.ligacontracancro.pt/cancro-do-colo-do-utero/"
+              >
+                <li>Liga Portuguesa contra o cancro</li>
+              </a>
+              <a
+                href="https://www.sns24.gov.pt/pt/tema/prevencao-e-cuidados-de-saude/rastreio-do-cancro-do-colo-do-utero/"
+              >
+                <li>SNS 24</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- logo separado à direita -->
+        <div class="footer-logo">
+          <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOTÃO ACESSIBILIDADE -->
+    <button
+      id="accessibility-btn"
+      class="accessibility"
+      aria-label="Acessibilidade"
+    >
+      <img src="../img/accessibility.png" alt="Acessibilidade" />
+    </button>
+
+    <!-- PAINEL LATERAL -->
+    <div id="accessibility-panel">
+      <div class="panel-header">
+        <h2>Perfis de acessibilidade</h2>
+        <button id="close-panel">✕</button>
+      </div>
+
+      <div class="panel-content">
+        <h3>Ajuste de voz e navegação</h3>
+
+        <div class="acc-grid">
+          <div class="acc-card" id="btnOuvir">
+            <img src="../img/ouvir.png" />
+            <p>Leitor de texto</p>
+          </div>
+        </div>
+
+        <h3>Tamanho do texto</h3>
+
+        <div class="text-box">
+          <label for="rangeText">Ajustar</label>
+
+          <input type="range" id="rangeText" min="80" max="150" value="100" />
+
+          <div class="buttons-text">
+            <button id="btnMinus">A-</button>
+            <button id="btnReset">Reset</button>
+            <button id="btnPlus">A+</button>
+          </div>
+        </div>
+
+        <h3>Ajuste de cor</h3>
+        <div class="acc-grid">
+          <div class="acc-card" id="grayscale-btn">
+            <img src="../img/monocromatico.png" />
+            <p>Monocromático</p>
+          </div>
+
+          <div class="acc-card" id="dark-btn">
+            <img src="../img/modo_escuro.png" />
+            <p>Modo escuro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script src="../js/init.js"></script>
+<script src="../js/admintestemunhos.js"></script>
+</body>
+</html>

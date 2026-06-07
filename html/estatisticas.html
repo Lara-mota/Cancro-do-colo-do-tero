@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Estatísticas | Colo Saudável</title>
+
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS GERAL -->
+  <link rel="stylesheet" href="../styles/paginaInicial.css">
+
+  <!-- CSS DA PÁGINA -->
+  <link rel="stylesheet" href="../styles/estatisticas.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>Relatório Estatístico</h1>
+
+<div class="container">
+
+<!-- TOPO -->
+<div class="top">
+
+<div class="card">
+<h2>Resumo Geral</h2>
+
+<div class="resumoTexto"></div>
+
+<div class="stats resumoStats"></div>
+
+</div>
+
+<div class="card">
+<canvas id="graficoGeral"></canvas>
+</div>
+
+</div>
+
+<!-- TABELA -->
+<table>
+<thead>
+<tr>
+<th>Página</th>
+<th>Visitas</th>
+<th>%</th>
+<th>Detalhe</th>
+</tr>
+</thead>
+<tbody id="tabela"></tbody>
+</table>
+
+<!-- DETALHE -->
+<div id="detalhe" class="detalhe">
+
+<canvas id="graficoPagina"></canvas>
+
+<div id="statsPagina" class="card"></div>
+
+</div>
+
+<!-- CONCLUSÃO -->
+<div id="conclusao" class="card"></div>
+
+<!-- BOTÕES -->
+<div class="botoes">
+<button onclick="download()">Descarregar</button>
+<button onclick="resetar()">Limpar</button>
+</div>
+
+</div>
+
+<script src="../js/estatisticas.js"></script>
+
+</body>
+</html>

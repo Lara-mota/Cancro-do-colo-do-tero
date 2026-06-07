@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glossário| Colo Saudável</title>
+
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS GERAL -->
+    <link rel="stylesheet" href="../styles/paginaInicial.css" />
+
+    <!-- CSS DA PÁGINA -->
+    <link rel="stylesheet" href="../styles/glossario.css" />
+  </head>
+
+  <body>
+   <!-- HEADER -->
+<header class="header">
+  <div class="container header-content">
+    <a href="/index.html">
+      <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" class="logo">
+    </a>
+
+   <nav class="nav">
+      <a href="../index.html">Início</a>
+      <a href="../html/patologia.html">Patologia</a>
+      <a href="../html/sintomas.html">Sintomas</a>
+      <a href="../html/prevencao.html">Prevenção</a>
+      <a href="../html/tratamento.html">Tratamento</a>
+      <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+      <a href="../html/contactos.html">Contactos</a>
+      <a href="../html/saberMais.html">Saber mais</a>
+      <a href="../html/Login.html">Login</a>
+    </nav>
+     <!-- Botão hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+  </div>
+  
+  <nav class="mobile-menu" id="mobileMenu">
+      <a href="../index.html">Início</a>
+      <a href="../html/patologia.html">Patologia</a>
+      <a href="../html/sintomas.html">Sintomas</a>
+      <a href="../html/prevencao.html">Prevenção</a>
+      <a href="../html/tratamento.html">Tratamento</a>
+      <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+      <a href="../html/contactos.html">Contactos</a>
+      <a href="../html/saberMais.html">Saber mais</a>
+      <a href="../html/Login.html">Login</a>
+    </nav>
+</header>
+
+    <!-- TÍTULO DA PÁGINA -->
+    <section class="glossario-header">
+      <div class="container">
+        <h1>Glossário</h1>
+        <p>
+          Conheça os principais termos associados ao cancro do colo do útero
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO -->
+    <section class="glossario-container container">
+      <!-- PESQUISA -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Pesquisar termo..." />
+      </div>
+
+      <!-- FILTRO -->
+      <div class="alphabet" id="alphabet">
+        <button class="active" data-letter="all">Todos</button>
+      </div>
+
+      <!-- LISTA -->
+      <div id="terms"></div>
+    </section>
+    <!-- BOTÃO ACESSIBILIDADE -->
+    <button
+      id="accessibility-btn"
+      class="accessibility"
+      aria-label="Acessibilidade"
+    >
+      <img src="../img/accessibility.png" alt="Acessibilidade" />
+    </button>
+
+    <!-- PAINEL LATERAL -->
+    <div id="accessibility-panel">
+      <div class="panel-header">
+        <h2>Perfis de acessibilidade</h2>
+        <button id="close-panel">✕</button>
+      </div>
+
+      <div class="panel-content">
+        <h3>Ajuste de voz e navegação</h3>
+
+        <div class="acc-grid">
+          <div class="acc-card" id="btnOuvir">
+            <img src="../img/ouvir.png" />
+            <p>Leitor de texto</p>
+          </div>
+        </div>
+
+        <h3>Tamanho do texto</h3>
+
+        <div class="text-box">
+          <label for="rangeText">Ajustar</label>
+
+          <input type="range" id="rangeText" min="80" max="150" value="100" />
+
+          <div class="buttons-text">
+            <button id="btnMinus">A-</button>
+            <button id="btnReset">Reset</button>
+            <button id="btnPlus">A+</button>
+          </div>
+        </div>
+
+        <h3>Ajuste de cor</h3>
+        <div class="acc-grid">
+          <div class="acc-card" id="grayscale-btn">
+            <img src="../img/monocromatico.png" />
+            <p>Monocromático</p>
+          </div>
+
+          <div class="acc-card" id="dark-btn">
+            <img src="../img/modo_escuro.png" />
+            <p>Modo escuro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+     <script src="../js/init.js"></script>
+    <script src="../js/glossario.js"></script>
+  </body>
+</html>

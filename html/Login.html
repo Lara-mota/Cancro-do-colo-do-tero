@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Login | Colo Saudável</title>
+
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS GERAL -->
+  <link rel="stylesheet" href="../styles/paginaInicial.css">
+
+  <!-- CSS DA PÁGINA -->
+  <link rel="stylesheet" href="../styles/Login.css">
+</head>
+
+<body>
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-content">
+    <a href="/index.html">
+      <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" class="logo">
+    </a>
+
+   <nav class="nav">
+      <a href="../index.html">Início</a>
+      <a href="../html/patologia.html">Patologia</a>
+      <a href="../html/sintomas.html">Sintomas</a>
+      <a href="../html/prevencao.html">Prevenção</a>
+      <a href="../html/tratamento.html">Tratamento</a>
+      <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+      <a href="../html/contactos.html">Contactos</a>
+      <a href="../html/saberMais.html">Saber mais</a>
+      <a href="../html/Login.html">Login</a>
+    </nav>
+     <!-- Botão hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+  </div>
+  
+  <nav class="mobile-menu" id="mobileMenu">
+      <a href="../index.html">Início</a>
+      <a href="../html/patologia.html">Patologia</a>
+      <a href="../html/sintomas.html">Sintomas</a>
+      <a href="../html/prevencao.html">Prevenção</a>
+      <a href="../html/tratamento.html">Tratamento</a>
+      <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+      <a href="../html/contactos.html">Contactos</a>
+      <a href="../html/saberMais.html">Saber mais</a>
+      <a href="../html/Login.html">Login</a>
+    </nav>
+</header>
+
+
+<div class="login-container">
+  <!-- LADO ESQUERDO (IMAGEM) -->
+  <div class="left">
+    <img src="../img/março lilás.png" alt="Março Lilás">
+  </div>
+
+  <!-- LADO DIREITO (FORM) -->
+  <div class="right">
+<div class="form-box">
+    <div class="profile">
+      <img src="../img/user.png" alt="user icon">
+      <p>Insere aqui os teus dados</p>
+    </div>
+
+    <form id="loginForm">
+      <label>Email</label>
+      <input type="email" placeholder="Introduz o teu email" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="********" required>
+
+      <div class="options">
+        <label><input type="checkbox"> Lembrar-me</label>
+        <button type="button" id="forgotBtn" class="link-btn">Esqueci-me da Password</button>
+      </div>
+
+      <button type="submit">Log in</button>
+    </form>
+
+    <div id="resetBox" class="hidden">
+
+  <label>Nova Password</label>
+  <input type="password" placeholder="Nova password">
+
+  <label>Confirmar Password</label>
+  <input type="password" placeholder="Confirmar password">
+
+  <button type="button">Guardar nova password</button>
+</div>
+
+    <p class="register">
+      Se ainda não tens conta regista-te <a href="../html/registo.html">aqui!</a>
+    </p>
+  </div>
+</div>
+
+  <!-- BOTÃO ACESSIBILIDADE -->
+    <button
+      id="accessibility-btn"
+      class="accessibility"
+      aria-label="Acessibilidade"
+    >
+      <img src="../img/accessibility.png" alt="Acessibilidade" />
+    </button>
+
+    <!-- PAINEL LATERAL -->
+    <div id="accessibility-panel">
+      <div class="panel-header">
+        <h2>Perfis de acessibilidade</h2>
+        <button id="close-panel">✕</button>
+      </div>
+
+      <div class="panel-content">
+        <h3>Ajuste de voz e navegação</h3>
+
+        <div class="acc-grid">
+          <div class="acc-card" id="btnOuvir">
+            <img src="../img/ouvir.png" />
+            <p>Leitor de texto</p>
+          </div>
+        </div>
+
+        <h3>Tamanho do texto</h3>
+
+        <div class="text-box">
+          <label for="rangeText">Ajustar</label>
+
+          <input type="range" id="rangeText" min="80" max="150" value="100" />
+
+          <div class="buttons-text">
+            <button id="btnMinus">A-</button>
+            <button id="btnReset">Reset</button>
+            <button id="btnPlus">A+</button>
+          </div>
+        </div>
+
+        <h3>Ajuste de cor</h3>
+        <div class="acc-grid">
+          <div class="acc-card" id="grayscale-btn">
+            <img src="../img/monocromatico.png" />
+            <p>Monocromático</p>
+          </div>
+
+          <div class="acc-card" id="dark-btn">
+            <img src="../img/modo_escuro.png" />
+            <p>Modo escuro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script src="../js/init.js"></script>  
+<script src="../js/Login.js"></script>
+</body>
+</html>
+
+

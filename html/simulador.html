@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Exame | Colo Saudável</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../styles/paginaInicial.css" />
+    <link rel="stylesheet" href="../styles/simulador.css" />
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-content">
+        <a href="/index.html">
+          <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" class="logo" />
+        </a>
+        <nav class="nav">
+          <a href="../index.html">Início</a>
+          <a href="../html/patologia.html">Patologia</a>
+          <a href="../html/sintomas.html">Sintomas</a>
+          <a href="../html/prevencao.html">Prevenção</a>
+          <a href="../html/tratamento.html">Tratamento</a>
+          <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+          <a href="../html/contactos.html">Contactos</a>
+          <a href="../html/saberMais.html">Saber mais</a>
+          <a href="../html/Login.html">Login</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="../index.html">Início</a>
+        <a href="../html/patologia.html">Patologia</a>
+        <a href="../html/sintomas.html">Sintomas</a>
+        <a href="../html/prevencao.html">Prevenção</a>
+        <a href="../html/tratamento.html">Tratamento</a>
+        <a href="../html/perguntasFrequentes.html">Perguntas frequentes</a>
+        <a href="../html/contactos.html">Contactos</a>
+        <a href="../html/saberMais.html">Saber mais</a>
+        <a href="../html/Login.html">Login</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-sim">
+      <h1>Simulador de Exame</h1>
+      <p>Conheça a sala, os materiais e os passos do exame de rastreio do Cancro do Colo do Útero</p>
+    </section>
+
+    <!-- SALA -->
+    <section class="sala-section">
+      <div class="sala-inner">
+        <div class="sala-label">Sala de exame — clique nos utensílios para saber mais</div>
+
+        <div class="imagemap-wrap">
+          <img src="../img/sim_sala_exame.png" alt="Sala de exame ginecológico" class="imagemap-img" id="salaImg" />
+          <div class="imagemap-overlay" id="salaOverlay">
+            <div class="zona-clique" style="left:30%;top:60%;width:12%;height:28%" onclick="mostrarInfo(0)">
+              <span class="zona-tooltip">Luvas médicas</span>
+            </div>
+            <div class="zona-clique" style="left:44%;top:55%;width:10%;height:28%" onclick="mostrarInfo(1)">
+              <span class="zona-tooltip">Espéculo vaginal</span>
+            </div>
+            <div class="zona-clique" style="left:57%;top:52%;width:6%;height:32%" onclick="mostrarInfo(2)">
+              <span class="zona-tooltip">Espátula de Ayre</span>
+            </div>
+            <div class="zona-clique" style="left:63%;top:50%;width:6%;height:35%" onclick="mostrarInfo(3)">
+              <span class="zona-tooltip">Escova cervical</span>
+            </div>
+            <div class="zona-clique" style="left:68%;top:63%;width:10%;height:18%" onclick="mostrarInfo(4)">
+              <span class="zona-tooltip">Lâmina</span>
+            </div>
+            <div class="zona-clique" style="left:80%;top:48%;width:8%;height:36%" onclick="mostrarInfo(5)">
+              <span class="zona-tooltip">Fixador</span>
+            </div>
+            <div class="zona-clique" style="left:30%;top:12%;width:26%;height:42%" onclick="mostrarInfo(6)">
+              <span class="zona-tooltip">Marquesa ginecológica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sala-msg">
+          <p>O exame é rápido, simples e fundamental para a deteção precoce. Cuide de si, previna-se, faça o rastreio.</p>
+        </div>
+      </div>
+
+      <!-- POPUP UTENSÍLIO -->
+      <div class="info-popup" id="infoPopup">
+        <button class="info-popup-fechar" onclick="fecharInfo()">✕</button>
+        <div class="info-popup-inner">
+          <img id="infoImg" src="" alt="" />
+          <div>
+            <span class="info-popup-titulo" id="infoTema"></span>
+            <h3 id="infoNome"></h3>
+            <p id="infoDesc"></p>
+            <div class="sim-dica" id="infoUso"></div>
+          </div>
+        </div>
+      </div>
+      <div class="info-popup-overlay" id="infoOverlay" onclick="fecharInfo()"></div>
+    </section>
+
+    <!-- MÉTODOS -->
+    <section class="metodos-section">
+      <div class="metodos-topo">
+        <h2>Papanicolau: Tradicional vs Citologia Líquida</h2>
+        <p>A principal diferença está na forma como as células recolhidas são preparadas para análise no laboratório</p>
+      </div>
+
+      <div class="metodos-grid">
+
+        <!-- TRADICIONAL -->
+        <div class="metodo-card">
+          <div class="metodo-bar metodo-bar--trad">
+            <span>🔬</span>
+            <h3>Papanicolau Tradicional</h3>
+          </div>
+          <div class="metodo-corpo">
+            <p class="metodo-desc">As células são espalhadas diretamente numa lâmina de vidro após a recolha.</p>
+            <div class="metodo-como">
+              <h4>Como funciona</h4>
+              <ol>
+                <li>A profissional recolhe células com a escova/espátula</li>
+                <li>O material é espalhado numa lâmina</li>
+                <li>A lâmina é fixada e enviada ao laboratório</li>
+              </ol>
+            </div>
+            <div class="metodo-vd">
+              <div>
+                <h4 class="verde">✅ Vantagens</h4>
+                <ul>
+                  <li>Método mais antigo e muito utilizado</li>
+                  <li>Geralmente mais barato</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="laranja">⚠️ Desvantagens</h4>
+                <ul>
+                  <li>Algumas células podem perder-se</li>
+                  <li>Sangue ou muco podem dificultar a leitura</li>
+                  <li>Pode haver mais resultados insatisfatórios</li>
+                </ul>
+              </div>
+            </div>
+            <div class="metodo-visual">
+              <p class="metodo-visual-label">Células espalhadas manualmente na lâmina:</p>
+              <img src="../img/sim_tradicional.jpg" alt="Citologia tradicional ao microscópio" class="metodo-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- LÍQUIDO -->
+        <div class="metodo-card metodo-card--dest">
+          <div class="metodo-bar metodo-bar--liq">
+            <span>🧪</span>
+            <h3>Citologia em Meio Líquido</h3>
+          </div>
+          <div class="metodo-corpo">
+            <p class="metodo-desc">As células são colocadas num frasco com líquido conservante e processadas automaticamente no laboratório.</p>
+            <div class="metodo-como">
+              <h4>Como funciona</h4>
+              <ol>
+                <li>A profissional recolhe as células</li>
+                <li>A escova é mergulhada num frasco com líquido especial</li>
+                <li>No laboratório, as células são filtradas e preparadas automaticamente</li>
+              </ol>
+            </div>
+            <div class="metodo-vd">
+              <div>
+                <h4 class="verde">✅ Vantagens</h4>
+                <ul>
+                  <li>Melhor preservação das células</li>
+                  <li>Menos interferência de sangue e secreções</li>
+                  <li>Menor taxa de amostras inadequadas</li>
+                  <li>Permite teste de HPV com a mesma amostra</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="laranja">⚠️ Desvantagens</h4>
+                <ul>
+                  <li>Normalmente mais caro</li>
+                  <li>Nem todos os centros usam este método</li>
+                </ul>
+              </div>
+            </div>
+            <div class="metodo-visual">
+              <p class="metodo-visual-label">Células mais distribuídas e limpas:</p>
+              <img src="../img/sim_liquido.jpg" alt="Citologia líquida ao microscópio" class="metodo-img" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="metodos-nota">
+        💡 Hoje, muitos hospitais e clínicas preferem a citologia em meio líquido porque costuma dar amostras de melhor qualidade e facilita o teste do HPV.
+      </div>
+    </section>
+
+    <!-- INICIAR SIMULAÇÃO -->
+    <section class="iniciar-section">
+      <h2>Quer saber o que acontece passo a passo?</h2>
+      <p>Percorra a simulação completa do exame em 7 passos</p>
+      <div class="passos-preview">
+        <div class="passo-prev"><span>1</span>Antes do exame</div>
+        <div class="passo-prev-seta">→</div>
+        <div class="passo-prev"><span>2</span>A sala</div>
+        <div class="passo-prev-seta">→</div>
+        <div class="passo-prev"><span>3</span>Posicionamento</div>
+        <div class="passo-prev-seta">→</div>
+        <div class="passo-prev"><span>4</span>Espéculo</div>
+        <div class="passo-prev-seta">→</div>
+        <div class="passo-prev"><span>5</span>Recolha</div>
+        <div class="passo-prev-seta">→</div>
+        <div class="passo-prev"><span>6</span>Fim</div>
+        <div class="passo-prev-seta">→</div>
+        <div class="passo-prev"><span>7</span>Resultado</div>
+      </div>
+      <button class="btn-iniciar" onclick="iniciarSimulacao()">▶ Iniciar a simulação</button>
+    </section>
+
+    <!-- MODAL SIMULAÇÃO -->
+    <div class="modal-overlay" id="modalSim">
+      <div class="modal">
+        <button class="modal-fechar" onclick="fecharModal('modalSim')">✕</button>
+        <div class="sim-progress">
+          <div class="sim-progress-bar" id="simProgressBar"></div>
+        </div>
+        <p class="sim-step-label" id="simStepLabel">Passo 1 de 7</p>
+        <div class="sim-body">
+          <div class="sim-img-wrap">
+            <img id="simImg" src="" alt="" />
+          </div>
+          <div class="sim-texto">
+            <h3 id="simTitulo"></h3>
+            <p id="simDescricao"></p>
+            <div class="sim-dica" id="simDica"></div>
+          </div>
+        </div>
+        <div class="sim-nav">
+          <button class="btn-sim btn-sim-sec" id="btnSimPrev" onclick="passoAnterior()">← Anterior</button>
+          <button class="btn-sim btn-sim-pri" id="btnSimNext" onclick="proximoPasso()">Seguinte →</button>
+        </div>
+      </div>
+    </div>
+<footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-columns">
+          <div class="footer-recursos">
+            <h4>Recursos</h4>
+            <ul>
+              <a href="../html/patologia.html">
+                <li>HPV</li>
+              </a>
+              <a href="../html/rastreio.html">
+                <li>Rastreio</li>
+              </a>
+                <a href=".../html/perguntasFrequentes.html">
+                <li>Perguntas Frequentes</li>
+              </a>
+              <a href="../html/artigos.html">
+                <li>Notícias</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="footer-suporte">
+            <h4>Suporte</h4>
+            <ul>
+              <a href="../html/contactos.html">
+                <li>Contactos</li>
+              </a>
+               <a href="../html/Sobre_nos.html">
+              <li>Sobre nós</li>
+             <a href="../html/termos.html">
+              <li>Termos e privacidade</li>
+            </a>
+               <a href="../html/estatisticas.html">
+              <li>Estatísticas do site</li>
+              </a>
+            </ul>
+          </div>
+          <!-- linha vertical -->
+          <div class="footer-divider"></div>
+
+          <div class="footer-outros">
+            <h4>Outros sites</h4>
+            <ul>
+              <a
+                href="https://www.ligacontracancro.pt/cancro-do-colo-do-utero/"
+              >
+                <li>Liga Portuguesa contra o cancro</li>
+              </a>
+              <a
+                href="https://www.sns24.gov.pt/pt/tema/prevencao-e-cuidados-de-saude/rastreio-do-cancro-do-colo-do-utero/"
+              >
+                <li>SNS 24</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- logo separado à direita -->
+        <div class="footer-logo">
+          <img src="../img/Logo _Colo Saudável.png" alt="Colo Saudável" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOTÃO ACESSIBILIDADE -->
+    <button
+      id="accessibility-btn"
+      class="accessibility"
+      aria-label="Acessibilidade"
+    >
+      <img src="../img/accessibility.png" alt="Acessibilidade" />
+    </button>
+
+    <!-- PAINEL LATERAL -->
+    <div id="accessibility-panel">
+      <div class="panel-header">
+        <h2>Perfis de acessibilidade</h2>
+        <button id="close-panel">✕</button>
+      </div>
+
+      <div class="panel-content">
+        <h3>Ajuste de voz e navegação</h3>
+
+        <div class="acc-grid">
+          <div class="acc-card" id="btnOuvir">
+            <img src="../img/ouvir.png" />
+            <p>Leitor de texto</p>
+          </div>
+        </div>
+
+        <h3>Tamanho do texto</h3>
+
+        <div class="text-box">
+          <label for="rangeText">Ajustar</label>
+
+          <input type="range" id="rangeText" min="80" max="150" value="100" />
+
+          <div class="buttons-text">
+            <button id="btnMinus">A-</button>
+            <button id="btnReset">Reset</button>
+            <button id="btnPlus">A+</button>
+          </div>
+        </div>
+
+        <h3>Ajuste de cor</h3>
+        <div class="acc-grid">
+          <div class="acc-card" id="grayscale-btn">
+            <img src="../img/monocromatico.png" />
+            <p>Monocromático</p>
+          </div>
+
+          <div class="acc-card" id="dark-btn">
+            <img src="../img/modo_escuro.png" />
+            <p>Modo escuro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/init.js"></script>
+    <script src="../js/simulador.js"></script>
+  </body>
+</html>
